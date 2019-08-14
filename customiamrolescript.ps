@@ -14,5 +14,3 @@ $role.Actions.Add("Microsoft.Compute/virtualMachines/powerOff/action")
 $role.AssignableScopes.Clear()
 $role.AssignableScopes.Add("/subscriptions/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 New-AzRoleDefinition -Role $role
-$role.AssignableScopes.Add("/subscriptions/[YOUR_SUBSCRIPTION_NAME]")
-$role.AssignableScopes.Add("/subscriptions/[YOUR_ANOTHER_SUBSCRIPTION_NAME]")
